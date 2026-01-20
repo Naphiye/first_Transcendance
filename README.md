@@ -9,8 +9,8 @@ Docker gère les conteneurs, la persistance, les uploads et les certificats TLS 
 
 Lancer le projet
 
-** Mode développement : **
+Mode développement : 
 ```make dev```
 
-** Mode production : **
+Mode production :
 ```make prod```
