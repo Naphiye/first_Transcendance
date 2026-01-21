@@ -29,11 +29,11 @@ export function handleOauthError() {
 
 
 function fetchAuthGithub() {
-    if(window.location.href.includes("localhost:5173")){
+    if (window.location.href.includes("localhost:5173")) {
         window.location.href = "https://localhost:5173/api/auth/github";
     }
-    else{
-        window.location.href = "https://localhost:8080/api/auth/github";
+    else {
+        window.location.href = "https://localhost:8443/api/auth/github";
     }
 }
 
@@ -92,7 +92,7 @@ export async function HomePage(container: HTMLDivElement) {
     loadPage(container);
     handleOauthError();
     /* DETECTEUR POUR LOUVERTURE DU MODAL 2FA SI ON EST UNE REDIRECTION DE GITHUB */
-    let user: { id: number, username: string,lang: string } | null = null;
+    let user: { id: number, username: string, lang: string } | null = null;
     const urlParams = new URLSearchParams(window.location.search);
     history.pushState({}, "", "/");
     if (urlParams.size > 0) {

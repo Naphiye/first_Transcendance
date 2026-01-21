@@ -64,7 +64,7 @@ async function startServer() {
         createRoutes();
         await fastify.listen({ port: 3000, host: "0.0.0.0" });
         if (isProd) {
-            console.log("✅ Serveur Fastify en ligne : https://localhost:8080");
+            console.log("✅ Serveur Fastify en ligne : https://localhost:8443");
         }
         else {
             console.log("✅ Serveur Fastify en ligne : https://localhost:5173 et back dispo sur https://localhost:3000");

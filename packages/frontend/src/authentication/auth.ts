@@ -51,8 +51,8 @@ class AuthManager {
         this.user = u;
         // donc if user jouvre la socket
         if (u) {
-            if (window.location.href === "https://localhost:8080/") {
-                ws = new WebSocket(`wss://localhost:8080/api/ws`);
+            if (window.location.href === "https://localhost:8443/") {
+                ws = new WebSocket(`wss://localhost:8443/api/ws`);
             }
             else {
                 ws = new WebSocket(`/api/ws`);
