@@ -66,7 +66,6 @@ export async function registerFastify() {
     }
     await initFakeHash();
     // Configure Nodemailer
-    // *Qwerty123
     emailSender = nodemailer.createTransport({
         service: "gmail",
         auth: {

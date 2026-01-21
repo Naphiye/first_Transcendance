@@ -16,10 +16,8 @@ CERTS_DIR = ./packages/config/certs
 USERS_UPLOADS_DIR = ./packages/backend/uploads/users
 LOGS_DIR = ./packages/logs
 
-#LAUNCH_TRANSCENDANCE_DEV = docker-compose -f docker-compose.dev.yml
-#LAUNCH_TRANSCENDANCE_PROD = docker-compose -f docker-compose.yml
-LAUNCH_TRANSCENDANCE_DEV = docker compose -f docker-compose.dev.yml
-LAUNCH_TRANSCENDANCE_PROD = docker compose -f docker-compose.yml
+LAUNCH_TRANSCENDANCE_DEV = docker-compose -f docker-compose.dev.yml
+LAUNCH_TRANSCENDANCE_PROD = docker-compose -f docker-compose.yml
 
 all: dev_or_prod
 
