@@ -1,0 +1,11 @@
+data_db
+certs
+.env
+
+**/uploads/users/
+
+# Logs
+logs
+*.log
+
+node_modules/
