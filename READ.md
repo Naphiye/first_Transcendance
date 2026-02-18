@@ -236,7 +236,6 @@ LOCALHOST=https://localhost:5173/
 16. **stop** : Stops running containers without removing them.
 17. **down** : Stops and removes containers, networks, and associated resources.
 18. **status** : Displays running containers, Docker images, Networks and Volumes.
-
 19. **help** : Displays the Makefile command list.
 
 * * *
