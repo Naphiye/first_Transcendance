@@ -247,13 +247,13 @@ LOCALHOST=https://localhost:5173/
 
 ### 🛠 Development Mode
 *⚠️ If you want to switch between development and production modes, you must clean the database first.*  
-3. Go to the `transcendance/` folder then build and start the infrastructure with `make dev`
+3. Go to the `transcendance/` folder then build and start the infrastructure with `make dev`  
 4. You can now access the website with `https://localhost:5173/`
 
 **OR**
 ### 🚀 Production Mode
 *⚠️ If switching from development mode, clean the database beforehand.*  
-3. Go to the `transcendance/` folder then build and start the infrastructure with `make prod`
+3. Go to the `transcendance/` folder then build and start the infrastructure with `make prod`  
 4. You can now access the website with `https://localhost:8443/`
 
 * * *
