@@ -33,14 +33,14 @@ This project demonstrates best practices in **web security**, authentication, re
 - **Fastify** : Node.js framework used as the backend. Handles routing, REST APIs, authentication, and WebSockets.
 - **SQLite** : Lightweight relational database storing users’ information, game stats, and the global dictionary.
 - Authentication modules :
-1. **JWT & 2FA** : Standard login workflow:
-User logs in with email/password (hashed in database).
-Backend issues a JWT token for session management.
-If enabled, 2FA is required to complete login.
-2. **Remote Authentication** : Users can log in via external providers (e.g., GitHub). Backend issues a JWT token after successful remote login.
+  1. **JWT & 2FA** : Standard login workflow:
+  User logs in with email/password (hashed in database).
+  Backend issues a JWT token for session management.
+  If enabled, 2FA is required to complete login.
+  2. **Remote Authentication** : Users can log in via external providers (e.g., GitHub). Backend issues a JWT token after successful remote login.
 - **WebSocket server** : Real-time updates for:
-1. Friends online/offline status
-2. Incoming friend requests
+  1. Friends online/offline status
+  2. Incoming friend requests
 
 **Frontend**
 - **Vanilla TypeScript SPA** : Handles all client-side logic.
@@ -58,9 +58,9 @@ If enabled, 2FA is required to complete login.
 - **Full-stack SPA** : Single-page application powered by a secure backend and a dynamic frontend.
 - **Real-time communication** : WebSockets for online presence, game events, and live notifications.
 - **Authentication & Security** : Secure login system including:
-1. Local login with hashed passwords, JWT sessions, and optional 2FA
-2. Remote authentication via external providers (GitHub OAuth)
-3. HTTPS/TLS enforced everywhere
+  1. Local login with hashed passwords, JWT sessions, and optional 2FA
+  2. Remote authentication via external providers (GitHub OAuth)
+  3. HTTPS/TLS enforced everywhere
 - **Gameplay Mechanics** : Classic Pong with AI or multiplayer mode, including tournament matches.
 - **Database Management** : SQLite for persistent storage of users informations.
 - **Multi-language support** : Dictionary system enables multiple languages across the website.
@@ -116,12 +116,12 @@ The Transcendance project is fully containerized using **Docker** and orchestrat
 
 ### Frontend Environment
 1. **Development Server** : Vite dev server over HTTPS.
-- Shared volume for immediate frontend edits in the container.
-- Live reloading for fast development.
+    - Shared volume for immediate frontend edits in the container.
+    - Live reloading for fast development.
 
 2. **Production Server** : NGINX reverse proxy serving the SPA over HTTPS.
-- Most files live inside the container for isolation.
-- Persistent folders (user profile pictures, SQLite database) mounted as shared volumes.
+    - Most files live inside the container for isolation.
+    - Persistent folders (user profile pictures, SQLite database) mounted as shared volumes.
 
 ### Security
 - HTTPS is enforced in both development and production.
@@ -130,8 +130,8 @@ The Transcendance project is fully containerized using **Docker** and orchestrat
 
 ### Data Persistence
 - Shared volumes allow safe persistence of :
-1. User-uploaded images
-2. SQLite database
+  1. User-uploaded images
+  2. SQLite database
 - Other files are isolated in the container to avoid accidental modification or leakage.
 
 * * *
@@ -246,13 +246,15 @@ LOCALHOST=https://localhost:5173/
 2. Go to the `transcendance/packages/backend` folder then create an environment file (`.env`) (*see [environment variables](#environment-variables) and [project structure](#project-structure) for more details*)
 
 ### 🛠 Development Mode
-*⚠️ If you want to switch between development and production modes, you must clean the database first.*  
+*⚠️ If you want to switch between development and production modes, you must clean the database first.*
+
 3. Go to the `transcendance/` folder then build and start the infrastructure with `make dev`  
 4. You can now access the website with `https://localhost:5173/`
 
 **OR**
 ### 🚀 Production Mode
-*⚠️ If switching from development mode, clean the database beforehand.*  
+*⚠️ If switching from development mode, clean the database beforehand.*
+
 3. Go to the `transcendance/` folder then build and start the infrastructure with `make prod`  
 4. You can now access the website with `https://localhost:8443/`
 
