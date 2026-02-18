@@ -110,8 +110,8 @@ Some visual assets were adapted from publicly available online resources and mod
 The Transcendance project is fully containerized using **Docker** and orchestrated with **Docker Compose**. Both **development** and **production** environments are designed to be **secure**, **reproducible**, and **convenient** for development.
 
 ### Container Base
-**Base Image** : `node:20-bullseye`
-**Runtime** : Docker
+**Base Image** : `node:20-bullseye`  
+**Runtime** : Docker  
 **Orchestration** : Docker Compose
 
 ### Frontend Environment
@@ -195,7 +195,7 @@ LOCALHOST=https://localhost:5173/
 * * *
 ## Database Access
 
-1. Open SQLite shell : `./packages/backend/data_db/database.sqlite`
+1. Open SQLite shell : `sqlite3 ./packages/backend/data_db/database.sqlite`
 2. List tables : `.tables`
 3. Show users : `SELECT * FROM users;`
 4. Exit SQLite and container : `.exit`
@@ -211,24 +211,28 @@ LOCALHOST=https://localhost:5173/
 3. **prod** : Build and start the production environment using Docker Compose (NGINX reverse proxy + optimized build).
 
 **🛠 Setup & Initialization**
+
 4. **create** : *create_db*, *create_certs* and *create_logs* rules.
 5. **create_db** : Creates `data_db/` (database directory) and `uploads/users/`(users avatar directory).
 6. **create_certs** : Creates `config/certs/` (SSL certificates directory).
 7. **create_logs** : Creates `logs/` (logs directory).
 
 **🧹 Cleaning**
+
 8. **clean** : *clean_db*, *clean_certs* and *clean_logs* rules.
 9. **clean_db** : Removes `data_db/` (database directory) and `uploads/users/`(users avatar directory).
 10. **clean_certs** : Removes `config/certs/` (SSL certificates directory).
 11. **clean_logs** : Removes `logs/` (logs directory).
 
 **🔄 Full Reset**
+
 12. **fclean_dev** : Stops containers, removes volumes, and deletes Docker images tagged `:dev`.
 13. **fclean_prod** : Stops containers, removes volumes, and deletes Docker images tagged `:prod`.
 14. **re_dev** : *fclean_dev* and *dev* rules.
 15. **re_prod** : *fclean_prod* and *prod* rules.
 
 **🐳 Container Management**
+
 16. **stop** : Stops running containers without removing them.
 17. **down** : Stops and removes containers, networks, and associated resources.
 18. **status** : Displays running containers, Docker images, Networks and Volumes.
