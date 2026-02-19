@@ -38,8 +38,7 @@ This README is organized as follows:
   - [Data Persistence](#data-persistence)
 
 - [Project Structure](#project-structure)
-
-- [Environment Variables](#environment-variables)
+  - [Environment Variables](#environment-variables)
 
 - [Database Access](#database-access)
 
