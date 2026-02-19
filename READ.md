@@ -21,51 +21,51 @@ This project demonstrates best practices in **web security**, authentication, re
 ## Languages & Technologies
 
 ### Languages
-- **TypeScript** : Full-stack language used in both backend (Fastify server) and frontend SPA. Provides static typing for safer, maintainable code.
-- **HTML** : Markup language for structuring frontend pages.
-- **JSON** : Data format used for API requests/responses, configuration, and storing structured data like dictionaries or game state.
-- **CSS** : Styling for frontend, implemented via **TailwindCSS**, a modern utility-first framework.
+1. **TypeScript** : Full-stack language used in both backend (Fastify server) and frontend SPA. Provides static typing for safer, maintainable code.
+2. **HTML** : Markup language for structuring frontend pages.
+3. **JSON** : Data format used for API requests/responses, configuration, and storing structured data like dictionaries or game state.
+4. **CSS** : Styling for frontend, implemented via **TailwindCSS**, a modern utility-first framework.
 
 
 ### Technologies
 **Backend**
 
-- **Fastify** : Node.js framework used as the backend. Handles routing, REST APIs, authentication, and WebSockets.
-- **SQLite** : Lightweight relational database storing users’ information, game stats, and the global dictionary.
-- Authentication modules :
-  1. **JWT & 2FA** : Standard login workflow:
-  User logs in with email/password (hashed in database).
-  Backend issues a JWT token for session management.
-  If enabled, 2FA is required to complete login.
-  2. **Remote Authentication** : Users can log in via external providers (e.g., GitHub). Backend issues a JWT token after successful remote login.
-- **WebSocket server** : Real-time updates for:
-  1. Friends online/offline status
-  2. Incoming friend requests
+1. **Fastify** : Node.js framework used as the backend. Handles routing, REST APIs, authentication, and WebSockets.
+2. **SQLite** : Lightweight relational database storing users’ information, game stats, and the global dictionary.
+3. Authentication modules :
+    - **JWT & 2FA** : Standard login workflow:  
+        - User logs in with email/password (hashed in database).  
+        - Backend issues a JWT token for session management.  
+        - If enabled, 2FA is required to complete login.  
+    - **Remote Authentication** : Users can log in via external providers (e.g., GitHub). Backend issues a JWT token after successful remote login.
+4. **WebSocket server** : Real-time updates for:  
+    - Friends online/offline status
+    - Incoming friend requests
 
 **Frontend**
-- **Vanilla TypeScript SPA** : Handles all client-side logic.
-- **TailwindCSS** : Modern utility-first CSS framework for styling.
-- **Vite** : Development server with fast hot reload.
+1. **Vanilla TypeScript SPA** : Handles all client-side logic.
+2. **TailwindCSS** : Modern utility-first CSS framework for styling.
+3. **Vite** : Development server with fast hot reload.
 
 **Infrastructure**
-- **Docker & Docker Compose** : Containerized dev and production environments.
-- **NGINX** : Reverse proxy in production with SSL/TLS for secure HTTPS connections.
-- **Container networking** : Ensures isolated and secure communication between services.
+1. **Docker & Docker Compose** : Containerized dev and production environments.
+2. **NGINX** : Reverse proxy in production with SSL/TLS for secure HTTPS connections.
+3. **Container networking** : Ensures isolated and secure communication between services.
 
 * * *
 ## Key Concepts
 
-- **Full-stack SPA** : Single-page application powered by a secure backend and a dynamic frontend.
-- **Real-time communication** : WebSockets for online presence, game events, and live notifications.
-- **Authentication & Security** : Secure login system including:
-  1. Local login with hashed passwords, JWT sessions, and optional 2FA
-  2. Remote authentication via external providers (GitHub OAuth)
-  3. HTTPS/TLS enforced everywhere
-- **Gameplay Mechanics** : Classic Pong with AI or multiplayer mode, including tournament matches.
-- **Database Management** : SQLite for persistent storage of users informations.
-- **Multi-language support** : Dictionary system enables multiple languages across the website.
-- **Containerized Deployment** : Docker ensures consistency, reproducibility, and isolated services.
-- **Frontend Styling** : Responsive, modern UI with TailwindCSS.
+1. **Full-stack SPA** : Single-page application powered by a secure backend and a dynamic frontend.
+2. **Real-time communication** : WebSockets for online presence, game events, and live notifications.
+3. **Authentication & Security** : Secure login system including:  
+    - Local login with hashed passwords, JWT sessions, and optional 2FA
+    - Remote authentication via external providers (GitHub OAuth)
+    - HTTPS/TLS enforced everywhere
+4. **Gameplay Mechanics** : Classic Pong with AI or multiplayer mode, including tournament matches.
+5. **Database Management** : SQLite for persistent storage of users informations.
+6. **Multi-language support** : Dictionary system enables multiple languages across the website.
+7. **Containerized Deployment** : Docker ensures consistency, reproducibility, and isolated services.
+8. **Frontend Styling** : Responsive, modern UI with TailwindCSS.
 
 * * *
 ## Features
@@ -129,10 +129,10 @@ The Transcendance project is fully containerized using **Docker** and orchestrat
 - All sensitive files, passwords, and tokens are stored securely and never exposed in the repository.
 
 ### Data Persistence
-- Shared volumes allow safe persistence of :
-  1. User-uploaded images
-  2. SQLite database
-- Other files are isolated in the container to avoid accidental modification or leakage.
+1. Shared volumes allow safe persistence of :
+    - User-uploaded images
+    - SQLite database
+2. Other files are isolated in the container to avoid accidental modification or leakage.
 
 * * *
 ## Project Structure
@@ -144,7 +144,7 @@ transcendance/
 │   ├── Dockerfile       
 │   ├── .env				# environment variables
 │   ├── src/
-|	├── data_db/               
+|   ├── data_db/               
 │   └── uploads/            
 │
 ├── config/certs                
@@ -195,6 +195,8 @@ LOCALHOST=https://localhost:5173/
 * * *
 ## Database Access
 
+List of command to manually **inspect the SQLite database** :
+
 1. Open SQLite shell : `sqlite3 ./packages/backend/data_db/database.sqlite`
 2. List tables : `.tables`
 3. Show users : `SELECT * FROM users;`
@@ -242,7 +244,7 @@ LOCALHOST=https://localhost:5173/
 
 ## How to use `transcendance`
 
-1. Clone `transcendance` in a folder first  : `git clone https://github.com/Naphiye/first_Transcendance.git`
+1. Clone `transcendance` in a folder first  : `git clone https://github.com/Naphiye/transcendance.git`
 2. Go to the `transcendance/packages/backend` folder then create an environment file (`.env`) (*see [environment variables](#environment-variables) and [project structure](#project-structure) for more details*)
 
 ### 🛠 Development Mode
