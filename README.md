@@ -60,7 +60,7 @@ The main goals of the project are:
 - Secure user authentication with **JWT**, optional **2FA** and **remote authentication**.
 - Dynamic user interaction : online presence and requests in friends list with **WebSockets**.
 - Full-stack SPA : tightly integrated backend and frontend.
-- Multi-language support via a **homemade dictionary (i18n)** accessible across the website.
+- Multi-language (EN, FR, CN) support via a **homemade dictionary (i18n)** accessible across the website.
 - Secure and containerized environment with **HTTPS/TLS**, SSL certificates, and isolated Docker services.
 
 This project demonstrates best practices in **web security**, authentication, real-time communication, and container orchestration.
