@@ -3,7 +3,53 @@
 ---
 
 
+
+
 # Project presentation - `transcendance`
+**Introduction**
+
+*This project was realized in a **duo with [Bibickette](https://github.com/bibickette)***
+
+This README is organized as follows:
+
+- [Description](#description)
+
+- [Languages & Technologies](#languages--technologies)
+  - [Languages](#languages)
+  - [Technologies](#technologies)
+
+- [Key Concepts](#key-concepts)
+
+- [Features](#features)
+
+- [Screenshots](#screenshots)
+  - [Home & Authentication](#-home--authentication)
+  - [Home when logged in](#-home-when-logged-in)
+  - [Pong Menu & Gameplay](#-pong-menu--gameplay)
+  - [Navigation & Real-Time Status](#-navigation--real-time-status)
+  - [User Management](#-user-management)
+  - [Friends & Public Profile](#-friends--public-profile)
+  - [Assets & Credits](#assets--credits)
+
+- [System Environment](#system-environment)
+  - [Container Base](#container-base)
+  - [Frontend Environment](#frontend-environment)
+  - [Security](#security)
+  - [Data Persistence](#data-persistence)
+
+- [Project Structure](#project-structure)
+
+- [Environment Variables](#environment-variables)
+
+- [Database Access](#database-access)
+
+- [Using transcendance](#using-transcendance)
+  - [Makefile rules](#makefile-rules)
+  - [How to use transcendance](#how-to-use-transcendance)
+
+
+
+
 ## Description
 Transcendance is a **full-stack** **Single Page Application** (SPA) built entirely in **TypeScript**. It is designed to provide a **secure**, **real-time multiplayer experience** and **dynamic user interaction**, combining modern web technologies and containerized deployment.
 
@@ -97,8 +143,7 @@ This project demonstrates best practices in **web security**, authentication, re
 * * *
 ## Screenshots
 
-#### 🏠 Home & Authentication
-
+#### 🏠 Home & Authentication 
 <p align="center">
   <img src="screens/home.png" height="300">
 </p>
@@ -220,7 +265,7 @@ transcendance/
 ```
 
 * * *
-## Environment Variables
+### Environment Variables
 The project uses a `.env` file located in `packages/backend/` to configure environment variables.
 
 ⚠️ The real `.env` file **should not** be committed.
