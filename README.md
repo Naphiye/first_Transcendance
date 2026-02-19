@@ -97,6 +97,63 @@ This project demonstrates best practices in **web security**, authentication, re
 * * *
 ## Screenshots
 
+#### 🏠 Home & Authentication
+
+<p align="center">
+  <img src="screens/home.png" height="300">
+</p>
+
+<p align="center">
+  <img src="screens/home_signup.png" height="250">
+  <img src="screens/home_signin.png" height="250">
+</p>
+
+
+#### 🏠 Home when logged in
+
+<p align="center">
+  <img src="screens/home_login.png" height="300">
+</p>
+
+#### 🏓 Pong Menu & Gameplay
+
+<p align="center">
+  <img src="screens/pong.gif" height="300">
+</p>
+<p align="center">
+  <img src="screens/pong_menu.png" height="300">
+</p>
+
+<p align="center">
+  <img src="screens/pong_modal.png" height="300">
+  <img src="screens/pong_history.png" height="300">
+</p>
+
+#### 🧭 Navigation & Real-Time Status
+
+<p align="center">
+  <img src="screens/navbar.gif" height="100">
+  <img src="screens/offonline.gif" height="100">
+
+</p>
+
+
+#### 👤 User Management
+
+<p align="center">
+  <img src="screens/profile.png" height="300">
+  <img src="screens/profile_modal.png" height="300">
+</p>
+
+#### 👥 Friends & Public Profile
+
+
+<p align="center">
+  <img src="screens/friends.png" height="300">
+  <img src="screens/public_profile.png" height="300">
+</p>
+
+
 
 ### Assets & Credits
 
