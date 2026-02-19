@@ -49,6 +49,8 @@ This README is organized as follows:
 
 
 
+---
+
 
 ## Description
 Transcendance is a **full-stack** **Single Page Application** (SPA) built entirely in **TypeScript**. It is designed to provide a **secure**, **real-time multiplayer experience** and **dynamic user interaction**, combining modern web technologies and containerized deployment.
