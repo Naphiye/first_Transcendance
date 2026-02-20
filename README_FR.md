@@ -2,7 +2,7 @@
 
 ---
 
-# Présentation du projet — `transcendance`
+# Présentation du projet `transcendance`
 
 ## Introduction
 
