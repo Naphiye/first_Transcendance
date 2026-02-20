@@ -85,7 +85,7 @@ This project demonstrates best practices in **web security**, authentication, re
         - Backend issues a JWT token for session management.  
         - If enabled, 2FA is required to complete login.  
     - **Remote Authentication** :  
-		    - Users can log in via external providers (e.g., GitHub).
+		    - Users can log in via external providers (e.g., GitHub).  
 		    - Backend issues a JWT token after successful remote login.
 4. **WebSocket server** : Real-time updates for:  
     - Friends online/offline status
